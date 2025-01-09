@@ -38,12 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3207597, g: 0.35809317, b: 0.41683024, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -99,13 +98,14 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: cc72cc02ff1354840a2c4a6cac5ffcbe,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -118,7 +118,9 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -127,6 +129,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 455939862267304186, guid: 6974999791dc8804fafee05e319aa932,
@@ -1025,6 +1028,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6974999791dc8804fafee05e319aa932, type: 3}
 --- !u!114 &22373474 stripped
 MonoBehaviour:
@@ -1052,55 +1058,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!21 &36508617
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &107276214
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &162314265
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -1164,35 +1183,51 @@ PrefabInstance:
       value: ShotgunShell (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &162314266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 162314265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &180990277
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &181160230
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -1256,53 +1291,74 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &181160231 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 181160230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &202367253
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &203271103
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &211835365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,9 +1387,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952133126}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1355,6 +1411,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1438,55 +1495,68 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &223186521
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &228512862
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &239197986
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5632805204120152147}
     m_Modifications:
     - target: {fileID: 2389942507987672545, guid: 8b66b714c761be843a501cf31acdeb29,
@@ -1555,35 +1625,51 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b66b714c761be843a501cf31acdeb29, type: 3}
+--- !u!4 &239197987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3053749101910181723, guid: 8b66b714c761be843a501cf31acdeb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 239197986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &242001975
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &247731438
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -1647,12 +1733,22 @@ PrefabInstance:
       value: ShotgunShell (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &247731439 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 247731438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &253814194
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 651925478}
     m_Modifications:
     - target: {fileID: 7302003263512753825, guid: 60b4b0fcacccab6418908b7a9947c602,
@@ -1721,6 +1817,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b4b0fcacccab6418908b7a9947c602, type: 3}
 --- !u!4 &253814195 stripped
 Transform:
@@ -1733,6 +1832,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -1796,12 +1896,22 @@ PrefabInstance:
       value: ShotgunShell (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &259495211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 259495210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &260963622
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 75816233042696186, guid: e76b000d3626e294cad55ca93a191510,
@@ -1885,81 +1995,103 @@ PrefabInstance:
       value: 90.00001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e76b000d3626e294cad55ca93a191510, type: 3}
 --- !u!21 &266313218
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &267843477
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &280107757
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &302410827
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -2023,12 +2155,22 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &302410828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 302410827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &305113910
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -2092,35 +2234,51 @@ PrefabInstance:
       value: ShotgunShell (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &305113911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 305113910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &319150524
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &340594491
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 5276702847809236135, guid: 25074b7c28fe8044f87c7c16927ca83c,
@@ -2184,35 +2342,51 @@ PrefabInstance:
       value: HVR_smg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25074b7c28fe8044f87c7c16927ca83c, type: 3}
+--- !u!4 &340594492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5276702847809236135, guid: 25074b7c28fe8044f87c7c16927ca83c,
+    type: 3}
+  m_PrefabInstance: {fileID: 340594491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &363080516
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &365590001
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -2276,12 +2450,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &365590002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 365590001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &378525574
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 2148501174508109447, guid: a64b8de1f14a40d43939b4043cc65628,
@@ -2400,6 +2584,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6853650556177913016, guid: a64b8de1f14a40d43939b4043cc65628,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 742792088}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2236298895176071932, guid: a64b8de1f14a40d43939b4043cc65628,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 378525577}
   m_SourcePrefab: {fileID: 100100000, guid: a64b8de1f14a40d43939b4043cc65628, type: 3}
 --- !u!1 &378525575 stripped
 GameObject:
@@ -2459,9 +2654,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394944562}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6169090454188002386}
   - {fileID: 8859630083940016226}
@@ -2470,13 +2667,13 @@ Transform:
   - {fileID: 5632805204120152147}
   - {fileID: 2159238597272572605}
   m_Father: {fileID: 2103155834}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &407763462
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 303630451937837364, guid: 6d27760462e99c64eb1f988cbad0eaa2,
@@ -2570,6 +2767,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d27760462e99c64eb1f988cbad0eaa2, type: 3}
 --- !u!4 &407763464 stripped
 Transform:
@@ -2582,6 +2782,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -2645,12 +2846,22 @@ PrefabInstance:
       value: DemoArrow (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &415002825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 415002824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &418751646
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -2714,35 +2925,51 @@ PrefabInstance:
       value: DemoArrow (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &418751647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 418751646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &433247235
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &439084884
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -2806,35 +3033,51 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &439084885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 439084884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &445395710
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &446300564
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -2898,12 +3141,22 @@ PrefabInstance:
       value: ShotgunShell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &446300565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 446300564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &476681672
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -2967,30 +3220,45 @@ PrefabInstance:
       value: ShotgunShell (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &476681673 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 476681672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &478383732
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &490249674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3074430196590707247, guid: e76b000d3626e294cad55ca93a191510,
@@ -2999,32 +3267,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!21 &496163384
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &507648541
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -3088,7 +3363,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &507648542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 507648541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &518708764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8447573521623765949, guid: fc0ccfb8c6e4d374594e4c07f7b53a00,
@@ -3100,6 +3384,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 1419733245436522626, guid: 23878e49d6062794194f6b69163f3dc6,
@@ -3199,6 +3484,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23878e49d6062794194f6b69163f3dc6, type: 3}
 --- !u!4 &538508533 stripped
 Transform:
@@ -3211,6 +3499,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7365062986212612702, guid: d979b720b0ea0aa4fbee62ad582bea0d,
@@ -3294,12 +3583,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2106184389}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d979b720b0ea0aa4fbee62ad582bea0d, type: 3}
 --- !u!1001 &607362531
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5632805204120152147}
     m_Modifications:
     - target: {fileID: 2389942507987672545, guid: 8b66b714c761be843a501cf31acdeb29,
@@ -3368,12 +3661,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b66b714c761be843a501cf31acdeb29, type: 3}
+--- !u!4 &607362532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3053749101910181723, guid: 8b66b714c761be843a501cf31acdeb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 607362531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &636413285
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -3437,30 +3740,45 @@ PrefabInstance:
       value: ShotgunShell (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &636413286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 636413285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &638400519
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &651925477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,43 +3802,51 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651925477}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2103155834}
   - {fileID: 253814195}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &656801581
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &667104539
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -3584,35 +3910,51 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &667104540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 667104539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &693617627
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &702118114
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 24795584940667165, guid: fc0ccfb8c6e4d374594e4c07f7b53a00,
@@ -3871,35 +4213,45 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 638400519}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0ccfb8c6e4d374594e4c07f7b53a00, type: 3}
 --- !u!21 &714100503
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &725221272
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -3963,35 +4315,51 @@ PrefabInstance:
       value: ShotgunShell (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &725221273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 725221272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &728188993
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &742792087
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 378525582}
     m_Modifications:
     - target: {fileID: 2389942507987672545, guid: 8b66b714c761be843a501cf31acdeb29,
@@ -4055,12 +4423,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b66b714c761be843a501cf31acdeb29, type: 3}
+--- !u!4 &742792088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3053749101910181723, guid: 8b66b714c761be843a501cf31acdeb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 742792087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &749962766
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -4124,30 +4502,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &749962767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 749962766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &774812317
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &775067047 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2771146717889678480, guid: 58fd73742002bc743864492ebb663a4d,
@@ -4162,32 +4555,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!21 &785219535
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &797754216
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -4251,12 +4651,22 @@ PrefabInstance:
       value: ShotgunShell (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &797754217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 797754216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &800146834
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 919132149085436856}
     m_Modifications:
     - target: {fileID: 2389942507987672545, guid: 8b66b714c761be843a501cf31acdeb29,
@@ -4320,12 +4730,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b66b714c761be843a501cf31acdeb29, type: 3}
+--- !u!4 &800146835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3053749101910181723, guid: 8b66b714c761be843a501cf31acdeb29,
+    type: 3}
+  m_PrefabInstance: {fileID: 800146834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &836537049
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -4389,12 +4809,22 @@ PrefabInstance:
       value: DemoArrow (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &836537050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 836537049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &842489667
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -4458,12 +4888,22 @@ PrefabInstance:
       value: DemoArrow (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &842489668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 842489667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &860130931
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1983405092}
     m_Modifications:
     - target: {fileID: 3489465288569489589, guid: eaf88a763606bdf46a130acefed57143,
@@ -4527,12 +4967,22 @@ PrefabInstance:
       value: clip_board
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaf88a763606bdf46a130acefed57143, type: 3}
+--- !u!4 &860130932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3489465288569489589, guid: eaf88a763606bdf46a130acefed57143,
+    type: 3}
+  m_PrefabInstance: {fileID: 860130931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &879066720
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 490294643, guid: d460b42f5643212459cd0e34dc68981d, type: 3}
@@ -4641,6 +5091,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d460b42f5643212459cd0e34dc68981d, type: 3}
 --- !u!4 &879066721 stripped
 Transform:
@@ -4653,6 +5106,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 303630451937837364, guid: 6d27760462e99c64eb1f988cbad0eaa2,
@@ -4746,6 +5200,9 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d27760462e99c64eb1f988cbad0eaa2, type: 3}
 --- !u!4 &885952990 stripped
 Transform:
@@ -4758,6 +5215,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -4821,12 +5279,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &895277072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 895277071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &896913215
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -4890,30 +5358,45 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &896913216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 896913215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &906954282
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &907227772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 529973882854412800, guid: f5f5aa0010b0b8744b2035589713b4db,
@@ -4925,6 +5408,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 5276702847439803545, guid: 25074b7c28fe8044f87c7c16927ca83c,
@@ -4993,58 +5477,80 @@ PrefabInstance:
       value: HVR_smg (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25074b7c28fe8044f87c7c16927ca83c, type: 3}
+--- !u!4 &928606521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5276702847809236135, guid: 25074b7c28fe8044f87c7c16927ca83c,
+    type: 3}
+  m_PrefabInstance: {fileID: 928606520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &931243357
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &934701538
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &938431965
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -5108,7 +5614,16 @@ PrefabInstance:
       value: ShotgunShell (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &938431966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 938431965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952133125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,10 +5653,10 @@ RectTransform:
   m_LocalRotation: {x: 0.17246713, y: 0.68575054, z: -0.17246677, w: 0.6857526}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 211835366}
   m_Father: {fileID: 1003033919}
-  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 28.234001, y: 90.00001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5163,6 +5678,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.0754717, g: 0.06016376, b: 0.06016376, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5202,84 +5718,105 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!21 &953769566
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &959773795
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &963636419
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &973250261
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -5343,35 +5880,51 @@ PrefabInstance:
       value: DemoArrow (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &973250262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 973250261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &974214996
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &994601840
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 1419733245436522626, guid: 23878e49d6062794194f6b69163f3dc6,
@@ -5471,6 +6024,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23878e49d6062794194f6b69163f3dc6, type: 3}
 --- !u!4 &994601841 stripped
 Transform:
@@ -5483,6 +6039,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 1133149922801444086, guid: f49a8853b7cfd394d871c239b06c4ca4,
@@ -5601,6 +6158,193 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1972261583}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1826556645}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 340594492}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310287788}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 928606521}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1707022561}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1859682043}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079368497}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1361002591}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017888906}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1281202549}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 895277072}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507648542}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1127386116}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 749962767}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 181160231}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 365590002}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446300565}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1898494486}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1225370623}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 259495211}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 725221273}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1972134375}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017442374}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 305113911}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2049752427}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1016116200}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636413286}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476681673}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247731439}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1135106376}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797754217}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1200004409}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1837624025}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 162314266}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1502204962}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 938431966}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1791188032}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1766203346}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1247646800}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1701214262}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 667104540}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302410828}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 896913216}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 439084885}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 952133126}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49a8853b7cfd394d871c239b06c4ca4, type: 3}
 --- !u!4 &1003033919 stripped
 Transform:
@@ -5613,6 +6357,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -5676,7 +6421,16 @@ PrefabInstance:
       value: ShotgunShell (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1016116200 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1016116199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1017193145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8447573521623765949, guid: fc0ccfb8c6e4d374594e4c07f7b53a00,
@@ -5688,6 +6442,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -5751,12 +6506,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &1017888906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1017888905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1022127208
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -5820,104 +6585,138 @@ PrefabInstance:
       value: DemoArrow (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1022127209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022127208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1028120442
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1050099889
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1067514838
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1074121627
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1074833677
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 529973882854412800, guid: f5f5aa0010b0b8744b2035589713b4db,
@@ -6006,12 +6805,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5f5aa0010b0b8744b2035589713b4db, type: 3}
 --- !u!1001 &1082109071
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 497558326116162908, guid: aa989ef338b1f1d499c583f604d233e5,
@@ -6100,6 +6903,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa989ef338b1f1d499c583f604d233e5, type: 3}
 --- !u!4 &1082109072 stripped
 Transform:
@@ -6183,6 +6989,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1095940357
@@ -6192,18 +6999,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095940355}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.2873783, y: -0.37293234, z: 0.43606642, w: 0.76692975}
   m_LocalPosition: {x: 9.25, y: 17.25, z: -45.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50.000004, y: -30.000002, z: 45.000004}
 --- !u!1001 &1121620461
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -6267,12 +7076,22 @@ PrefabInstance:
       value: DemoArrow (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1121620462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121620461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1127386115
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -6336,12 +7155,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &1127386116 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1127386115}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1135106375
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -6405,81 +7234,109 @@ PrefabInstance:
       value: ShotgunShell (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1135106376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1135106375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1154707758
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1161571878
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1180251186
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1185140037
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 1133149922801444086, guid: f49a8853b7cfd394d871c239b06c4ca4,
@@ -6583,6 +7440,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49a8853b7cfd394d871c239b06c4ca4, type: 3}
 --- !u!4 &1185140039 stripped
 Transform:
@@ -6595,6 +7455,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -6658,12 +7519,22 @@ PrefabInstance:
       value: ShotgunShell (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1200004409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1200004408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1224131591
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 1133149922801444086, guid: f49a8853b7cfd394d871c239b06c4ca4,
@@ -6767,6 +7638,61 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 716049019708242262}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315437160094531434}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1324369896}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596947544}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 836537050}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1121620462}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 418751647}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620792188}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 415002825}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1022127209}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1763695296}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 973250262}
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 842489668}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49a8853b7cfd394d871c239b06c4ca4, type: 3}
 --- !u!4 &1224131593 stripped
 Transform:
@@ -6779,6 +7705,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -6842,12 +7769,22 @@ PrefabInstance:
       value: ShotgunShell (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1225370623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1225370622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1247646799
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -6911,35 +7848,51 @@ PrefabInstance:
       value: ShotgunShell (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1247646800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1247646799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1256428861
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1279751359
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 24795584940667165, guid: fc0ccfb8c6e4d374594e4c07f7b53a00,
@@ -7253,12 +8206,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 203271103}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0ccfb8c6e4d374594e4c07f7b53a00, type: 3}
 --- !u!1001 &1281202548
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 7908477967345923796, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
@@ -7322,35 +8279,51 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4, type: 3}
+--- !u!4 &1281202549 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9066069023107760840, guid: 0f6914ee08131a84b95bf9a3ee9e0fe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1281202548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1294351965
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1310287787
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 8575909758062007558, guid: 9d18a71358dd26f408908648eb8563ef,
@@ -7414,12 +8387,22 @@ PrefabInstance:
       value: HVR_pistol (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d18a71358dd26f408908648eb8563ef, type: 3}
+--- !u!4 &1310287788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8575909758062007558, guid: 9d18a71358dd26f408908648eb8563ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310287787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1324369895
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -7483,12 +8466,22 @@ PrefabInstance:
       value: DemoArrow (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1324369896 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324369895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1328402149
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 3690569957606164009, guid: 5adcd9b3b3ab61c4c8936757d2e04308,
@@ -7577,6 +8570,9 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adcd9b3b3ab61c4c8936757d2e04308, type: 3}
 --- !u!4 &1328402150 stripped
 Transform:
@@ -7589,6 +8585,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4013254746517429689, guid: a03ed519be01d1440a8ec63d2ac101f7,
@@ -7652,58 +8649,74 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a03ed519be01d1440a8ec63d2ac101f7, type: 3}
 --- !u!21 &1354644526
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1359136800
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1361002590
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -7767,81 +8780,109 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &1361002591 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1361002590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1411823891
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1412087467
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1467830153
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1470432541
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 3714029381086000552, guid: ff598cdf329129d46933a4a34f329bee,
@@ -7946,6 +8987,9 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a922590c89891ac4b8cc5df0db96c4ee,
         type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff598cdf329129d46933a4a34f329bee, type: 3}
 --- !u!4 &1470432542 stripped
 Transform:
@@ -7958,6 +9002,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1983405092}
     m_Modifications:
     - target: {fileID: 168526764, guid: 5b144317327c91949b0e39444f5bc2f0, type: 3}
@@ -8118,12 +9163,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b144317327c91949b0e39444f5bc2f0, type: 3}
+--- !u!4 &1484572917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 53333695718815854, guid: 5b144317327c91949b0e39444f5bc2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1484572916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1489508346
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 3690569957606164009, guid: 5adcd9b3b3ab61c4c8936757d2e04308,
@@ -8207,6 +9262,9 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adcd9b3b3ab61c4c8936757d2e04308, type: 3}
 --- !u!4 &1489508347 stripped
 Transform:
@@ -8219,6 +9277,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -8282,127 +9341,167 @@ PrefabInstance:
       value: ShotgunShell (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1502204962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1502204961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1511439269
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1531105120
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1552249924
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1558252179
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1558765695
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1564914812
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 230768827031016044, guid: 3f08c0b3521a78940874511c1a52cf61,
@@ -8501,6 +9600,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f08c0b3521a78940874511c1a52cf61, type: 3}
 --- !u!4 &1564914813 stripped
 Transform:
@@ -8513,6 +9615,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -8576,35 +9679,51 @@ PrefabInstance:
       value: DemoArrow (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1596947544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1596947543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1601059259
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1620792187
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -8668,7 +9787,16 @@ PrefabInstance:
       value: DemoArrow (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1620792188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1620792187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1667896504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,9 +9820,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667896504}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
   m_LocalPosition: {x: -8.757, y: 0.56089306, z: 6.166}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1185140039}
   - {fileID: 879066721}
@@ -8704,36 +9834,42 @@ Transform:
   - {fileID: 490249674}
   - {fileID: 907227772}
   m_Father: {fileID: 1807336347}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!21 &1671470632
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1701214261
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -8797,12 +9933,22 @@ PrefabInstance:
       value: ShotgunShell (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1701214262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1701214261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1707022560
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -8866,35 +10012,51 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &1707022561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1707022560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1708295210
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1763695295
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -8958,12 +10120,22 @@ PrefabInstance:
       value: DemoArrow (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &1763695296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763695295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1766203345
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -9027,58 +10199,80 @@ PrefabInstance:
       value: ShotgunShell (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1766203346 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1766203345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1778106736
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1782077237
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1791188031
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -9142,7 +10336,16 @@ PrefabInstance:
       value: ShotgunShell (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1791188032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791188031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1795575521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 286535464904037520, guid: 6974999791dc8804fafee05e319aa932,
@@ -9160,6 +10363,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 2120577055}
     m_Modifications:
     - target: {fileID: 4791174827754113225, guid: b1d5d3ef80859e448bbf1e53111472e6,
@@ -9248,7 +10452,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d5d3ef80859e448bbf1e53111472e6, type: 3}
+--- !u!4 &1800003531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8191738930844208606, guid: b1d5d3ef80859e448bbf1e53111472e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1800003530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1807336346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9272,9 +10485,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807336346}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.25, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1983405092}
   - {fileID: 383172074}
@@ -9294,13 +10509,13 @@ Transform:
   - {fileID: 407763464}
   - {fileID: 885952990}
   m_Father: {fileID: 2103155834}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1826556644
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 2185565597631821702, guid: 39f797aa425763e40b2ede5382f9d9c8,
@@ -9364,12 +10579,22 @@ PrefabInstance:
       value: HVR_shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39f797aa425763e40b2ede5382f9d9c8, type: 3}
+--- !u!4 &1826556645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2185565597631821702, guid: 39f797aa425763e40b2ede5382f9d9c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826556644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1837624024
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -9433,12 +10658,22 @@ PrefabInstance:
       value: ShotgunShell (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1837624025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837624024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1859682042
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -9502,81 +10737,109 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &1859682043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859682042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1877887128
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1879194998
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1884865601
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1898494485
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -9640,12 +10903,22 @@ PrefabInstance:
       value: ShotgunShell (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1898494486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1898494485}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1972134374
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -9709,12 +10982,22 @@ PrefabInstance:
       value: ShotgunShell (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &1972134375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 1972134374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1972261582
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 8575909758062007558, guid: 9d18a71358dd26f408908648eb8563ef,
@@ -9778,12 +11061,22 @@ PrefabInstance:
       value: HVR_pistol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d18a71358dd26f408908648eb8563ef, type: 3}
+--- !u!4 &1972261583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8575909758062007558, guid: 9d18a71358dd26f408908648eb8563ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1972261582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1983405091
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 817918038001439893, guid: 79f4ee5b807f5584f935ab05950c1348,
@@ -9942,6 +11235,25 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8681712286792026023, guid: 79f4ee5b807f5584f935ab05950c1348,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1484572917}
+    - targetCorrespondingSourceObject: {fileID: 8681712286792026023, guid: 79f4ee5b807f5584f935ab05950c1348,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 860130932}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
 --- !u!4 &1983405092 stripped
 Transform:
@@ -9954,6 +11266,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 24795584940667165, guid: fc0ccfb8c6e4d374594e4c07f7b53a00,
@@ -10212,12 +11525,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 953769566}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0ccfb8c6e4d374594e4c07f7b53a00, type: 3}
 --- !u!1001 &2017442373
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -10281,35 +11598,51 @@ PrefabInstance:
       value: ShotgunShell (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &2017442374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 2017442373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &2035896159
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &2049752426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
@@ -10373,12 +11706,22 @@ PrefabInstance:
       value: ShotgunShell (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
+--- !u!4 &2049752427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240,
+    type: 3}
+  m_PrefabInstance: {fileID: 2049752426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2079368496
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1003033919}
     m_Modifications:
     - target: {fileID: 4239680606358691228, guid: add805f03ddc3f7498b179e94e22c78a,
@@ -10442,7 +11785,16 @@ PrefabInstance:
       value: -0.192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
+--- !u!4 &2079368497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2079368496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2103155833
 GameObject:
   m_ObjectHideFlags: 0
@@ -10466,14 +11818,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103155833}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.5, y: 0, z: -6.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 394944563}
   - {fileID: 1807336347}
   m_Father: {fileID: 651925478}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2106184389 stripped
 AudioSource:
@@ -10486,6 +11839,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
@@ -10559,6 +11913,13 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800003531}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49a8853b7cfd394d871c239b06c4ca4, type: 3}
 --- !u!4 &2120577055 stripped
 Transform:
@@ -10571,6 +11932,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1667896505}
     m_Modifications:
     - target: {fileID: 1071467923521948813, guid: 2e8f8e7864013c44d8d5bb658ed0d3bb,
@@ -10654,6 +12016,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e8f8e7864013c44d8d5bb658ed0d3bb, type: 3}
 --- !u!4 &2136065843 stripped
 Transform:
@@ -10663,32 +12028,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!21 &2144967488
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom/EasyColliderShader
   m_Shader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
     - _Size: 0.01
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &315437160094531433
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
@@ -10752,12 +12124,22 @@ PrefabInstance:
       value: DemoArrow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
+--- !u!4 &315437160094531434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077,
+    type: 3}
+  m_PrefabInstance: {fileID: 315437160094531433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &716049019708242261
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1224131593}
     m_Modifications:
     - target: {fileID: 1564928642945957992, guid: 26b564e70a02d9145a8c06aafeda673c,
@@ -10821,12 +12203,22 @@ PrefabInstance:
       value: DemoBow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26b564e70a02d9145a8c06aafeda673c, type: 3}
+--- !u!4 &716049019708242262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1564928642945957992, guid: 26b564e70a02d9145a8c06aafeda673c,
+    type: 3}
+  m_PrefabInstance: {fileID: 716049019708242261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &888400565650030552
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 1602286930534243832, guid: d29296cfe440aa4409396cab77b611ec,
@@ -10900,6 +12292,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29296cfe440aa4409396cab77b611ec, type: 3}
 --- !u!4 &919132149085436856 stripped
 Transform:
@@ -10912,6 +12307,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 2771146717889678480, guid: 58fd73742002bc743864492ebb663a4d,
@@ -11010,6 +12406,9 @@ PrefabInstance:
       value: hatch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58fd73742002bc743864492ebb663a4d, type: 3}
 --- !u!4 &1902855379858874912 stripped
 Transform:
@@ -11028,6 +12427,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 3863304589366004990, guid: 00105550540b4434e9c0e79e69faf23c,
@@ -11091,12 +12491,60 @@ PrefabInstance:
       value: sliding_door_setup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
 --- !u!1001 &3497485228596465097
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3497485227092484991, guid: c884123088440284692e484efd2c360f,
@@ -11225,12 +12673,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c884123088440284692e484efd2c360f, type: 3}
 --- !u!1001 &4444703988530636783
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 4444703988940069535, guid: 1ba7b2eef341dad4da3f5ff12480db09,
@@ -11304,12 +12756,16 @@ PrefabInstance:
       value: key_door_setup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba7b2eef341dad4da3f5ff12480db09, type: 3}
 --- !u!1001 &4651587004498019630
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 2331667566621238336, guid: df4e90f729f159e4e8389e3e8fdd01a4,
@@ -11383,12 +12839,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e79e7e41a8d753c42a037f8b95b538fb, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4e90f729f159e4e8389e3e8fdd01a4, type: 3}
 --- !u!1001 &4666190882027018142
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 405831063107986807, guid: f7f1f53fb6b79894aa2c7b6c1e90b839,
@@ -11482,6 +12942,17 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1074704030790238157, guid: f7f1f53fb6b79894aa2c7b6c1e90b839,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239197987}
+    - targetCorrespondingSourceObject: {fileID: 1074704030790238157, guid: f7f1f53fb6b79894aa2c7b6c1e90b839,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 607362532}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f1f53fb6b79894aa2c7b6c1e90b839, type: 3}
 --- !u!1 &5160943049985314633 stripped
 GameObject:
@@ -11517,6 +12988,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 3902718552350846365, guid: 68de445e84f40634a88269d30d897cef,
@@ -11580,6 +13052,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68de445e84f40634a88269d30d897cef, type: 3}
 --- !u!4 &6169090454188002386 stripped
 Transform:
@@ -11592,6 +13067,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
     - target: {fileID: 2148501174508109447, guid: a64b8de1f14a40d43939b4043cc65628,
@@ -11710,12 +13186,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6853650556177913016, guid: a64b8de1f14a40d43939b4043cc65628,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 800146835}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2236298895176071932, guid: a64b8de1f14a40d43939b4043cc65628,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5160943049985314634}
   m_SourcePrefab: {fileID: 100100000, guid: a64b8de1f14a40d43939b4043cc65628, type: 3}
 --- !u!1001 &6579604651283994508
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4821168040709207153, guid: 2d85852d37d85bc4e805efc90f61d0f5,
@@ -11794,6 +13282,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a678aaa62479e504698cda27edf4c585, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d85852d37d85bc4e805efc90f61d0f5, type: 3}
 --- !u!4 &6977904242286633326 stripped
 Transform:
@@ -11813,3 +13304,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4444703988530636783}
   m_PrefabAsset: {fileID: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1095940357}
+  - {fileID: 3497485228596465097}
+  - {fileID: 554890349}
+  - {fileID: 1353620538}
+  - {fileID: 22373467}
+  - {fileID: 651925478}
+  - {fileID: 6579604651283994508}
+  - {fileID: 2120577053}
