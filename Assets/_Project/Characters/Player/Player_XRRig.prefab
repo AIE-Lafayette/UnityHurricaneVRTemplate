@@ -1158,9 +1158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df32767e580c4d24a3d3c9ed3026afd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanJump: 1
+  CanJump: 0
   CanSteerWhileJumping: 1
-  CanSprint: 1
+  CanSprint: 0
   CanCrouch: 0
   DirectionStyle: 0
   InitialHMDAdjustment: 1
@@ -1173,15 +1173,15 @@ MonoBehaviour:
   InstantAcceleration: 1
   Acceleration: 15
   Deacceleration: 15
-  MoveSpeed: 1.5
+  MoveSpeed: 0
   SprintAcceleration: 20
-  RunSpeed: 3.5
+  RunSpeed: 0
   Gravity: 5
   MaxFallSpeed: 5
   JumpVelocity: 2
   DoubleClickThreshold: 0.25
   RotationType: 0
-  SmoothTurnSpeed: 250
+  SmoothTurnSpeed: 100
   SmoothTurnThreshold: 0.1
   SnapAmount: 45
   SnapThreshold: 0.75
